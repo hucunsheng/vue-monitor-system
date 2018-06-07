@@ -9,7 +9,7 @@
         <div class="container">
             <div class="plugins-tips">
                 vue-schart：vue.js封装sChart.js的图表组件。
-                访问地址：<a href="https://github.com/lin-xin/vue-schart" target="_blank">vue-schart</a>
+                访问地址：<a href="https://github.com/hucunsheng/vue-schart" target="_blank">vue-schart</a>
             </div>
             <div class="schart">
                 <div class="content-title">柱状图</div>
