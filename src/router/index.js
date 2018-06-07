@@ -25,6 +25,11 @@ export default new Router({
                     meta: { title: '基础表格' }
                 },
                 {
+                    path: '/monitor',
+                    component: resolve => require(['../components/page/Monitor.vue'], resolve),
+                    meta: { title: '监控管理' }
+                },
+                {
                     path: '/tabs',
                     component: resolve => require(['../components/page/Tabs.vue'], resolve),
                     meta: { title: 'tab选项卡' }
@@ -59,6 +64,18 @@ export default new Router({
                     meta: { title: 'schart图表' }
                 },
                 {
+                    // vue-schart组件
+                    path: '/sampleMonitor',
+                    component: resolve => require(['../components/page/SampleMonitorCharts.vue'], resolve),
+                    meta: { title: '柱状图' }
+                },
+                {
+                    // vue-schart组件
+                    path: '/comMonitor',
+                    component: resolve => require(['../components/page/ComMonitorCharts.vue'], resolve),
+                    meta: { title: '环比柱状图' }
+                },
+                {
                     // 拖拽列表组件
                     path: '/drag',
                     component: resolve => require(['../components/page/DragList.vue'], resolve),
@@ -69,7 +86,17 @@ export default new Router({
                     path: '/permission',
                     component: resolve => require(['../components/page/Permission.vue'], resolve),
                     meta: { title: '权限测试', permission: true }
-                }
+                },
+		        {
+		            path: '/InsertMonitor',
+		            component: resolve => require(['../components/page/InsertMonitor.vue'], resolve),
+		       		meta: { title: '新增监控' }
+		        },
+		        {
+		            path: '/updateMonitor',
+		            component: resolve => require(['../components/page/UpdateMonitor.vue'], resolve),
+		       		meta: { title: '新增监控' }
+		        }
             ]
         },
         {
